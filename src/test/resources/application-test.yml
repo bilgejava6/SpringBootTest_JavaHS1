@@ -1,0 +1,5 @@
+server:
+  port: 9999
+
+uygulamam:
+  versiyon: v01-test
