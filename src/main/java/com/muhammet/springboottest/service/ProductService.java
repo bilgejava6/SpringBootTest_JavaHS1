@@ -24,4 +24,12 @@ public class ProductService {
     public Optional<Product> findOptionalByProductId(Long productId) {
         return repository.findById(productId);
     }
+
+    public void addDemoData() {
+        repository.save(Product.builder().name("şeker").price(34d).build());
+        repository.save(Product.builder().name("un").price(64d).build());
+        repository.save(Product.builder().name("yağ").price(234d).build());
+        repository.save(Product.builder().name("süt").price(90d).build());
+
+    }
 }
